@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="MainMenuController">
+    <children>
+        <Label text="Welcome to my app!" font="22">
+            <padding>
+                <Insets top="20" bottom="20" />
+            </padding>
+        </Label>
+
+        <MenuBar>
+            <menus>
+                <Menu text="File">
+                    <items>
+                        <MenuItem text="New" onAction="#handleNew"/>
+                        <MenuItem text="Open" onAction="#handleOpen"/>
+                        <MenuItem text="Save" onAction="#handleSave"/>
+                        <SeparatorMenuItem />
+                        <MenuItem text="Exit" onAction="#handleExit"/>
+                    </items>
+                </Menu>
+
+                <Menu text="Help">
+                    <items>
+                        <MenuItem text="About" onAction="#handleAbout"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+
+    </children>
+</VBox>
